@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name:		nanobind
-Version:	2.5.0
+Version:	2.8.0
 Release:	1
 Source0:	https://github.com/wjakob/nanobind/archive/refs/tags/v%{version}.tar.gz
 Summary:	Tiny and efficient C++/Python bindings

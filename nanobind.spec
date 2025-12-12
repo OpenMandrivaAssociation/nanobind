@@ -2,7 +2,7 @@
 
 Name:		nanobind
 Version:	2.8.0
-Release:	1
+Release:	2
 Source0:	https://github.com/wjakob/nanobind/archive/refs/tags/v%{version}.tar.gz
 Summary:	Tiny and efficient C++/Python bindings
 URL:		https://github.com/wjakob/nanobind

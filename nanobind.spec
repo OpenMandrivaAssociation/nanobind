@@ -1,8 +1,8 @@
 %undefine _debugsource_packages
 
 Name:		nanobind
-Version:	2.8.0
-Release:	2
+Version:	2.10.2
+Release:	1
 Source0:	https://github.com/wjakob/nanobind/archive/refs/tags/v%{version}.tar.gz
 Summary:	Tiny and efficient C++/Python bindings
 URL:		https://github.com/wjakob/nanobind
@@ -36,5 +36,5 @@ pip wheel --wheel-dir ../RPMBUILD_wheels --no-deps --no-build-isolation --verbos
 	-C"cmake.build-type=RelWithDebInfo"
 
 %files
-%{python3_sitelib}/nanobind
-%{python3_sitelib}/nanobind-%{version}.dist-info
+%{python_sitelib}/nanobind
+%{python_sitelib}/nanobind-%{version}.dist-info

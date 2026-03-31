@@ -1,13 +1,13 @@
 %undefine _debugsource_packages
 
 Name:		nanobind
-Version:	2.10.2
+Version:	2.12.0
 Release:	1
-Source0:	https://github.com/wjakob/nanobind/archive/refs/tags/v%{version}.tar.gz
 Summary:	Tiny and efficient C++/Python bindings
-URL:		https://github.com/wjakob/nanobind
 License:	BSD-3-Clause
 Group:		Development/Tools
+URL:		https://github.com/wjakob/nanobind
+Source0:	%{URL}/archive/v%{version}/%{name}-%{version}.tar.gz
 BuildRequires:	cmake
 BuildRequires:	ninja
 BuildRequires:	pkgconfig(python3)

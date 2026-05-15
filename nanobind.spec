@@ -2,20 +2,23 @@
 
 Name:		nanobind
 Version:	2.12.0
-Release:	1
+Release:	2
 Summary:	Tiny and efficient C++/Python bindings
 License:	BSD-3-Clause
 Group:		Development/Tools
 URL:		https://github.com/wjakob/nanobind
 Source0:	%{URL}/archive/v%{version}/%{name}-%{version}.tar.gz
+
+BuildSystem:	python
+BuildArch:	noarch
 BuildRequires:	cmake
 BuildRequires:	ninja
 BuildRequires:	pkgconfig(python3)
 BuildRequires:	cmake(tsl-robin-map)
 BuildRequires:	python%{pyver}dist(pip)
 BuildRequires:	python%{pyver}dist(scikit-build-core)
-BuildArch:	noarch
-BuildSystem:	python
+# Also needs this for runtime, packages requiring nanobind also need tsl-robin-map package.
+Requires:	cmake(tsl-robin-map)
 
 %description
 nanobind is a small binding library that exposes C++ types in Python and vice
